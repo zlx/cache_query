@@ -18,9 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-use `cache_find` instead of `find`
-use `cache_where` instead of `where`
-use `cache_#{association}` instead of `association`
++ use `cache_find` instead of `find`
++ use `cache_where` instead of `where`
++ use `cache_#{association}` instead of `association`
+
+
+## Todo
+
+1. add `cache_find`
+2. add `cache_where`
+3. add `cache_#{association}`
 
 ## Contributing
 
