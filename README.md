@@ -27,7 +27,7 @@ Or install it yourself as:
 
 - [x] Add `cache_find`
 - [ ] Add `cache_where`
-- [ ] Add `cache_#{association}`
+- [x] Add `cache_#{association}`
 
 ## Contributing
 
