@@ -25,9 +25,9 @@ Or install it yourself as:
 
 ## Todo
 
-1. add `cache_find`
-2. add `cache_where`
-3. add `cache_#{association}`
+- [x] Add `cache_find`
+- [ ] Add `cache_where`
+- [ ] Add `cache_#{association}`
 
 ## Contributing
 
