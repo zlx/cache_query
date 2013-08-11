@@ -48,12 +48,10 @@ module CacheQuery
       Rails.cache.fetch("all_#{name}") { name.constantize.all.to_a }
     end
 
-    def cache cache_name, &block
-      if block_given?
-        self.class_cache_keys ||= Set.new
-        self.class_cache_keys.add(cache_name)
-        Rails.cache.fetch(cache_name) { yield }
-      end
+    def cache cache_name, block
+      self.class_cache_keys ||= Set.new
+      self.class_cache_keys.add(cache_name)
+      Rails.cache.fetch(cache_name) { block.call }
     end
   end
 
